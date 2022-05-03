@@ -9,8 +9,8 @@ RUN apt-get update; \
     apt install -y python3-pip; \
     apt install -y sshpass; \
     apt install -y openssh-client; \
-    apt-get install -y ipt-transport-https; \
-    wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb;\
+#    apt-get install -y ipt-transport-https; \
+#    wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb;\
     dpkg -i packages-microsoft-prod.deb; \
     apt-get update; \
 #    add-apt-repository universe; \
