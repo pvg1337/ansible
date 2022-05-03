@@ -14,9 +14,9 @@ RUN apt-get update; \
     dpkg -i packages-microsoft-prod.deb; \
     apt-get update; \
 #    add-apt-repository universe; \
-    apt-get install -y powershell; \
-    pwsh -c "Set-PackageSource -Name PSGallery -Trusted"; \
-    pwsh -c "Install-Module AZ -Scope AllUsers"; 
+#    apt-get install -y powershell; \
+#    pwsh -c "Set-PackageSource -Name PSGallery -Trusted"; \
+#    pwsh -c "Install-Module AZ -Scope AllUsers"; 
 
 RUN curl -sL https://aka.ms/InstallAzureCLIDeb | bash ;
 
