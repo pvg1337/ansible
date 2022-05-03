@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-RUN apt-get update && apt-get install -y curl && apt-get install -y wget
+RUN apt-get update && apt-get install -y curl && apt-get install -y wget && apt-get install -y --no-install-recommends apt-utils
 RUN apt-get install -y git
 RUN apt-get install -y inotify-tools
 RUN apt-get install -y nano tree vim jq
