@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-RUN apt-get update && apt-get install -y curl && apt-get install -y wget && apt-get install -y --no-install-recommends apt-utils
+RUN apt-get update && apt-get install -y curl && apt-get install -y wget
 RUN apt-get install -y git
 RUN apt-get install -y inotify-tools
 RUN apt-get install -y nano tree vim jq
@@ -11,7 +11,7 @@ RUN apt-get update; \
     apt install -y openssh-client; \
 #    apt-get install -y ipt-transport-https; \
 #    wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb;\
-    dpkg -i packages-microsoft-prod.deb; \
+#    dpkg -i packages-microsoft-prod.deb; \
     apt-get update; \
 #    add-apt-repository universe; \
 #    apt-get install -y powershell; \
