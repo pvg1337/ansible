@@ -3,7 +3,7 @@ FROM ubuntu:latest
 RUN apt-get update && apt-get install -y curl && apt-get install -y wget
 RUN apt-get install -y git
 RUN apt-get install -y inotify-tools
-RUN apt-get install -y nano tree vim jq
+RUN apt-get install -y nano tree vim jq apt-utils build-essential libssl-dev libffi-dev python-dev
 
 RUN apt-get update; \
     apt install -y python3-pip; \
